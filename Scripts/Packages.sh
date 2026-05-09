@@ -62,7 +62,7 @@ UPDATE_PACKAGE() {
 UPDATE_PACKAGE "partexp" "sirpdboy/luci-app-partexp" "main"
 # UPDATE_PACKAGE "qbittorrent" "sbwml/luci-app-qbittorrent" "master" "" "qt6base qt6tools rblibtorrent"
 # UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
-UPDATE_PACKAGE "luci-app-dockerman" "kenzok8/jell" "master"
+UPDATE_PACKAGE "luci-app-dockerman" "kenzok8/jell" "main"
 UPDATE_PACKAGE "nas" "linkease/nas-packages" "master"
 UPDATE_PACKAGE "nas_luci" "linkease/nas-packages-luci" "main"
 git clone --depth=1 https://github.com/linkease/istore-ui istore-ui
@@ -134,7 +134,7 @@ UPDATE_VERSION() {
 # sed -i 's/+xray-core//' luci-app-passwall2/Makefile
 
 # #删除官方的默认插件
-rm -rf ../feeds/luci/applications/luci-app-{passwall*,mosdns,dae*,bypass*}
+rm -rf ../feeds/luci/applications/luci-app-{passwall*,mosdns,dockerman,dae*,bypass*}
 rm -rf ../feeds/packages/net/{dae*}
 #rm -rf ../feeds/packages/net/{v2ray-geodata,dae*}
 
