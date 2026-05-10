@@ -62,7 +62,7 @@ UPDATE_PACKAGE() {
 UPDATE_PACKAGE "partexp" "sirpdboy/luci-app-partexp" "main"
 # UPDATE_PACKAGE "qbittorrent" "sbwml/luci-app-qbittorrent" "master" "" "qt6base qt6tools rblibtorrent"
 # UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
-UPDATE_PACKAGE "luci-app-dockerman" "kenzok8/jell" "main"
+UPDATE_PACKAGE "luci-app-dockerman" "kenzok8/jell" "main" "pkg" 
 UPDATE_PACKAGE "nas" "linkease/nas-packages" "master"
 UPDATE_PACKAGE "nas_luci" "linkease/nas-packages-luci" "main"
 git clone --depth=1 https://github.com/linkease/istore-ui istore-ui
