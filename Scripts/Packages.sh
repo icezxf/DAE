@@ -74,6 +74,14 @@ UPDATE_PACKAGE "luci-app-easytier" "EasyTier/luci-app-easytier" "main"
 UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier" "main"
 UPDATE_PACKAGE "openlist2" "sbwml/luci-app-openlist2" "main"
 #UPDATE_PACKAGE "quickfile" "sbwml/luci-app-quickfile" "main"
+UPDATE_PACKAGE "nas" "linkease/nas-packages" "master"
+UPDATE_PACKAGE "nas_luci" "linkease/nas-packages-luci" "main"
+git clone --depth=1 https://github.com/linkease/istore-ui istore-ui
+git clone --depth=1 https://github.com/linkease/istore istore
+UPDATE_PACKAGE "istorex" "linkease/nas-packages-luci" "main" "pkg"
+UPDATE_PACKAGE "quickstart" "linkease/nas-packages" "master" "pkg"
+UPDATE_PACKAGE "luci-app-quickstart" "linkease/nas-packages-luci" "main" "pkg"
+UPDATE_PACKAGE "luci-app-podman" "Zerogiven-OpenWRT-Packages/luci-app-podman" "main"
 
 #更新软件包版本
 UPDATE_VERSION() {
